@@ -188,6 +188,19 @@ footer {
 }
 
 
+.github-icon {
+  max-width: 36px;
+  text-align: center;
+  margin: 1em 0;
+  display: inline-block;
+  opacity: 0.75;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
 @media (max-width: 640px) {
   header {
     min-height: inherit;
