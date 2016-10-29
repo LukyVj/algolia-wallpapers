@@ -1,26 +1,33 @@
 [
+
 	{
 		"name":"wp-millisecondsMatter_blue",
-		"url":"images/wp-millisecondsMatter_blue.jpg"
+		"url":"images/wp-millisecondsMatter_blue.jpg",
+		"type": "desktop"
 	},
 	{
 		"name":"wp-millisecondsMatter_colorful",
-		"url":"images/wp-millisecondsMatter_colorful.jpg"
+		"url":"images/wp-millisecondsMatter_colorful.jpg",
+		"type": "desktop"
 	},
 	{
 		"name":"wp-millisecondsMatter_big-right",
-		"url":"images/wp-millisecondsMatter_big-right.jpg"
+		"url":"images/wp-millisecondsMatter_big-right.jpg",
+		"type": "desktop"
 	},
 	{
 		"name":"wp-desktop-hello",
-		"url":"images/wp-desktop-hello.png"
+		"url":"images/wp-desktop-hello.png",
+		"type": "desktop"
 	},
 	{
-		"name":"wp-iphone-hello.png",
-		"url":"images/wp-iphone-hello.png"
+		"name":"wp-iphone-hello",
+		"url":"images/wp-iphone-hello.png",
+		"type": "mobile"
 	},
 	{
 		"name":"wp-iphoneplus-hello",
-		"url":"images/wp-iphoneplus-hello.png"
+		"url":"images/wp-iphoneplus-hello.png",
+		"type": "mobile"
 	}
 ]

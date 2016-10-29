@@ -21,6 +21,10 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  require 'sprockets/es6'
+	activate :sprockets do |s|
+	  s.supported_output_extensions << '.es6'
+	end
 end
 
 ###
