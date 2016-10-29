@@ -372,6 +372,15 @@ textarea {
  *
  *  @content [Write the style you want to apply to the diagonal edge, and it will be added within the @content directive]
  */
+.wp-container, .wp-container > div[class*="-wallpapers"] {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0; }
+
 :root {
   font-size: 18px; }
 
@@ -379,7 +388,16 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     * {
       -webkit-font-smoothing: antialiased;
@@ -400,30 +418,31 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: #182848;
-  border-bottom: solid 1px #1F3B5D;
-  background-image: linear-gradient(140deg, #2f6b91 10%, #182848 90%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  font-family: "Roboto Mono", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  color: #fff; }
+  color: #46AEDA;
+  background-color: #FCFCFC;
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px; }
+
+header,
+.controls {
+  text-align: center; }
 
 figure {
   padding: 0;
-  margin: 0 1px; }
+  margin: 0;
+  position: relative; }
   figure figcaption {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
     -webkit-clip-path: inset(50%) !important;
     clip-path: inset(50%) !important;
-    height: 1px !important;
+    height: 0px !important;
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important; }
+    width: 0px !important;
+    white-space: nowrap !important;
+    position: absolute; }
 
 header {
   min-height: 320px;
@@ -433,7 +452,9 @@ header {
     margin: 0;
     line-height: 320px;
     text-transform: uppercase;
-    margin-bottom: -140px; }
+    margin-bottom: -140px;
+    font-size: 42px;
+    font-weight: 400; }
   header h3 {
     font-weight: 100; }
   header img {
@@ -447,63 +468,74 @@ footer {
   position: relative;
   float: left;
   width: 100%;
-  padding: 2em 0; }
+  padding: 2em 0;
+  text-align: center; }
   footer a {
     color: #fb366e;
     font-weight: bold; }
 
 .wp-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 0;
-  margin: 0; }
+  margin: 2em 0;
+  padding: 2em 0;
+  border-top: 1px solid #e9ebee;
+  border-bottom: 1px solid #e9ebee;
+  box-shadow: inset 32px 0 120px #e9ebee; }
+  .wp-container > div[class*="-wallpapers"]:not(.display) {
+    display: none; }
   .wp-container .wallpaper {
-    flex: 33%;
+    flex: 25%;
     padding: 0;
     margin: 0;
     position: relative;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    align-self: flext-start;
+    margin: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f5f6f7;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background: #fff;
+    border-radius: 4px; }
+    .wp-container .wallpaper:hover {
+      box-shadow: 0 40px 40px rgba(0, 0, 0, 0.16);
+      transform: translate(0, -20px);
+      transition-delay: 0s !important; }
     .wp-container .wallpaper img {
-      max-width: 100%; }
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center center; }
     .wp-container .wallpaper a {
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-      opacity: 0;
-      background: #e7486b;
-      color: #fff;
-      border: 1px solid #fb366e;
-      height: 40px;
-      max-width: auto;
-      display: block;
-      margin: auto;
-      max-width: 65%;
-      line-height: 40px;
-      padding: 0 1em;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 3px;
-      font-weight: 600;
-      font-size: 12px;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-      transition: background 0.1s ease, transform 0.2s ease;
-      cursor: pointer;
-      letter-spacing: 2px;
-      font-size: 1em;
-      font-family: 'Helvetica', sans-serif; }
+      opacity: 0; }
       .wp-container .wallpaper a:hover {
-        background: #fb366e;
         transform: scale(1.05); }
     .wp-container .wallpaper:hover img {
       opacity: 0.5; }
     .wp-container .wallpaper:hover a {
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1); }
+    .wp-container .wallpaper__title {
+      color: #4B4F56;
+      padding: 20px;
+      border-top: 1px #e9ebee solid; }
+      .wp-container .wallpaper__title h3 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 12px; }
+      .wp-container .wallpaper__title p {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 20px;
+        color: #90949C;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; }
 
 .github-icon {
   max-width: 36px;
@@ -513,6 +545,64 @@ footer {
   opacity: 0.75; }
   .github-icon:hover {
     opacity: 1; }
+
+.button {
+  background: linear-gradient(to right, #8f64f3 0%, #39b1de 90%) #3a6ec1;
+  color: #fff;
+  height: 40px;
+  max-width: auto;
+  display: block;
+  margin: auto;
+  max-width: 65%;
+  line-height: 40px;
+  padding: 0 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.1s ease, transform 0.2s ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-family: 'Helvetica', sans-serif;
+  position: relative; }
+  .button.small {
+    min-width: 160px;
+    max-width: 300px;
+    display: inline-block; }
+  .button img {
+    left: -10px;
+    top: 0;
+    fill: #fff;
+    max-height: 70%;
+    margin: 0 -5px 0 5px;
+    vertical-align: middle;
+    display: inline-block;
+    opacity: 0.8;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    top: 6px;
+    transform: scale(0.8); }
+  .button + .button {
+    margin-left: 8px; }
+  .button.fab {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42.6 65' x='0px' y='0px'><title>down-5</title><path d='M355,452h-6V408a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v44Z' transform='translate(-330.7 -406)' fill='%23fff' /><path d='M352.1,458a2.5,2.5,0,0,1-1.9-.8l-18.9-21.1a2.5,2.5,0,0,1,3.7-3.3l17,19,16.9-19a2.5,2.5,0,0,1,3.7,3.3l-18.7,21.1a2.5,2.5,0,0,1-1.9.8h0Z' fill='%23fff' transform='translate(-330.7 -406)'/></svg>"), linear-gradient(to right, #8f64f3 0%, #39b1de 90%) #3a6ec1;
+    width: 80px;
+    height: 80px;
+    background-size: 30px, cover;
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -40px !important;
+    left: inherit !important;
+    right: 20px !important;
+    top: inherit !important;
+    transition: transform 0.3s ease 0.2s;
+    transform: scale(0); }
 
 @media (max-width: 640px) {
   header {
