@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 $alpha-color: #46AEDA;
 $beta-color: #e7486b;
+
+$min-width: 320px;
+$min-aspect: 16 9;
+$min-height: $min-width * (nth($min-aspect, 2) / nth($min-aspect, 1));
+$max-width: 1200px;
+$max-aspect: 4 1;
+$max-height: $max-width * (nth($max-aspect, 2) / nth($max-aspect, 1));
+  .element {
+
+  }
+
 /**
  * RETINA
  *
@@ -103,10 +114,32 @@ figure {
 }
 
 
-header {
-  min-height: 320px;
+#header {
   padding: 2em;
+  background:url("data:image/svg+xml;utf8,<svg viewBox=\'0 0 307 256\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' opacity=\'0.2\'><title>Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 Mask</title><defs><path id=\'a\' d=\'M0 0h307v307H0z\'/></defs><g fill=\'none\' fill-rule=\'evenodd\'><mask id=\'b\' fill=\'%23fff\'><use xlink:href=\'%23a\'/></mask><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'13\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'42\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'-8\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'93\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'144\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'193\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'244\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'295\' y=\'62\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'64\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'115\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'166\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'217\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'268\' y=\'-9\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'13\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'42\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'-8\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'93\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'144\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'193\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'244\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'295\' y=\'202\' width=\'19\' height=\'54\' rx=\'9.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'64\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'115\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'166\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'217\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/><rect fill=\'%23895CF2\' mask=\'url(%23b)\' x=\'268\' y=\'131\' width=\'25\' height=\'54\' rx=\'12.5\'/></g></svg>");
+  background-repeat: repeat-x;
+  background-position: -1px 0;
+  background-size: 150px;
+  position: relative;
+  background-attachment: fixed;
 
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(transparent, #fff 37%);
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 
   h1 {
     padding: 0;
@@ -140,8 +173,10 @@ footer {
   text-align: center;
 
   a {
-    color: #fb366e;
+    color: #895cf2;
     font-weight: bold;
+    text-decoration: none;
+
   }
 }
 
@@ -200,7 +235,7 @@ footer {
 
 
       &:hover {
-        transform: scale(1.05)
+        transform: scale(1.05) rotate(0deg)
       }
     }
 
@@ -211,6 +246,10 @@ footer {
       a {
         opacity: 1;
         transform: scale(1);
+
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+        }
       }
     }
 
@@ -228,14 +267,14 @@ footer {
       }
 
       p {
-            font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    line-height: 20px;
-    color: #90949C;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 20px;
+        color: #90949C;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
@@ -259,7 +298,6 @@ footer {
   background: linear-gradient(to right, mix(#895cf2, #fff, 95%) 0%,  mix(#2faddc, #fff, 95%) 90%) mix(#3066BE, #fff, 95%);
   color: #fff;
   height: 40px;
-  max-width: auto;
   display: block;
   margin: auto;
   max-width: 65%;
@@ -276,6 +314,8 @@ footer {
   letter-spacing: 2px;
   font-size: 1em;
   font-family: 'Helvetica', sans-serif;
+  position: relative;
+  z-index: 2;
 
   &.small {
     min-width: 160px;
@@ -306,12 +346,12 @@ footer {
   }
 
   &.fab {
-    background:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 42.6 65\' x=\'0px\' y=\'0px\'><title>down-5</title><path d=\'M355,452h-6V408a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v44Z\' transform=\'translate(-330.7 -406)\' fill=\'%23fff\' /><path d=\'M352.1,458a2.5,2.5,0,0,1-1.9-.8l-18.9-21.1a2.5,2.5,0,0,1,3.7-3.3l17,19,16.9-19a2.5,2.5,0,0,1,3.7,3.3l-18.7,21.1a2.5,2.5,0,0,1-1.9.8h0Z\' fill=\'%23fff\' transform=\'translate(-330.7 -406)\'/></svg>"), linear-gradient(to right, mix(#895cf2, #fff, 95%) 0%,  mix(#2faddc, #fff, 95%) 90%) mix(#3066BE, #fff, 95%);
+    background:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 42.6 65\' x=\'0px\' y=\'0px\'><title>down-5</title><path d=\'M355,452h-6V408a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v44Z\' transform=\'translate(-330.7 -406)\' fill=\'%23fff\' /><path d=\'M352.1,458a2.5,2.5,0,0,1-1.9-.8l-18.9-21.1a2.5,2.5,0,0,1,3.7-3.3l17,19,16.9-19a2.5,2.5,0,0,1,3.7,3.3l-18.7,21.1a2.5,2.5,0,0,1-1.9.8h0Z\' fill=\'%23fff\' transform=\'translate(-330.7 -406)\'/></svg>"), linear-gradient(to top right, mix(#895cf2, #fff, 95%) 0%,  mix(#2faddc, #fff, 95%) 90%) mix(#3066BE, #fff, 95%);
     width: 80px;
     height: 80px;
     background-size: 30px, cover;
     background-repeat: no-repeat;
-    background-position: center center, center center;
+    background-position: center 22px, center center;
     border-radius: 100%;
     position: absolute;
     bottom: -40px !important;
@@ -319,7 +359,13 @@ footer {
     right: 20px !important;
     top: inherit !important;
     transition: transform 0.3s ease 0.2s;
-    transform: scale(0)
+    transform: scale(0);
+    box-shadow: 0 10px 1  0px rgba(0,0,0,.08);
+  }
+
+  &.active {
+    box-shadow: none;
+    transform: scale(0.9);
   }
 }
 

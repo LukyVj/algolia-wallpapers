@@ -97,6 +97,12 @@ function togglePanels() {
 	function displayPanel(element) {
 		element.addEventListener('click', function(){
 			var classEnd = this.hash.split(':')[1];
+
+			for (var i = 0; i < trigger.length; i++) {
+				trigger[i].classList.remove('active');
+			}
+
+			this.classList.add('active');
 			switch (classEnd) {
 			  case 'desktop':
 			    document.querySelector('.'+classEnd + '-wallpapers').classList.add('display');
