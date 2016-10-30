@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="256px" viewBox="0 0 307 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="307" height="307"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-+-Rectangle-2-Mask">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="13" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="42" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="-8" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="93" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="144" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="193" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="244" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="295" y="62" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="64" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="115" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="166" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="217" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="268" y="-9" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="13" y="131" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="42" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="-8" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="93" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="144" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="193" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="244" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="295" y="202" width="19" height="54" rx="9.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="64" y="131" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="115" y="131" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="166" y="131" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="217" y="131" width="25" height="54" rx="12.5"></rect>
+                <rect id="Rectangle-2" fill="#895CF2" mask="url(#mask-2)" x="268" y="131" width="25" height="54" rx="12.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

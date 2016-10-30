@@ -444,10 +444,29 @@ figure {
     white-space: nowrap !important;
     position: absolute; }
 
-header {
-  min-height: 320px;
-  padding: 2em; }
-  header h1 {
+#header {
+  padding: 2em;
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 307 256' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' opacity='0.2'><title>Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 + Rectangle 2 Mask</title><defs><path id='a' d='M0 0h307v307H0z'/></defs><g fill='none' fill-rule='evenodd'><mask id='b' fill='%23fff'><use xlink:href='%23a'/></mask><rect fill='%23895CF2' mask='url(%23b)' x='13' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='42' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='-8' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='93' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='144' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='193' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='244' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='295' y='62' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='64' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='115' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='166' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='217' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='268' y='-9' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='13' y='131' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='42' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='-8' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='93' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='144' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='193' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='244' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='295' y='202' width='19' height='54' rx='9.5'/><rect fill='%23895CF2' mask='url(%23b)' x='64' y='131' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='115' y='131' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='166' y='131' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='217' y='131' width='25' height='54' rx='12.5'/><rect fill='%23895CF2' mask='url(%23b)' x='268' y='131' width='25' height='54' rx='12.5'/></g></svg>");
+  background-repeat: repeat-x;
+  background-position: -1px 0;
+  background-size: 150px;
+  position: relative;
+  background-attachment: fixed; }
+  #header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(transparent, #fff 37%); }
+  #header > * {
+    position: relative;
+    z-index: 2; }
+  #header h1 {
     padding: 0;
     margin: 0;
     line-height: 320px;
@@ -455,9 +474,9 @@ header {
     margin-bottom: -140px;
     font-size: 42px;
     font-weight: 400; }
-  header h3 {
+  #header h3 {
     font-weight: 100; }
-  header img {
+  #header img {
     max-height: 60px;
     padding: 0;
     margin: 0;
@@ -471,8 +490,9 @@ footer {
   padding: 2em 0;
   text-align: center; }
   footer a {
-    color: #fb366e;
-    font-weight: bold; }
+    color: #895cf2;
+    font-weight: bold;
+    text-decoration: none; }
 
 .wp-container {
   margin: 2em 0;
@@ -512,12 +532,14 @@ footer {
       right: 0;
       opacity: 0; }
       .wp-container .wallpaper a:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05) rotate(0deg); }
     .wp-container .wallpaper:hover img {
       opacity: 0.5; }
     .wp-container .wallpaper:hover a {
       opacity: 1;
       transform: scale(1); }
+      .wp-container .wallpaper:hover a:hover {
+        transform: scale(1.1) rotate(5deg); }
     .wp-container .wallpaper__title {
       color: #4B4F56;
       padding: 20px;
@@ -550,7 +572,6 @@ footer {
   background: linear-gradient(to right, #8f64f3 0%, #39b1de 90%) #3a6ec1;
   color: #fff;
   height: 40px;
-  max-width: auto;
   display: block;
   margin: auto;
   max-width: 65%;
@@ -567,6 +588,8 @@ footer {
   letter-spacing: 2px;
   font-size: 1em;
   font-family: 'Helvetica', sans-serif;
+  position: relative;
+  z-index: 2;
   position: relative; }
   .button.small {
     min-width: 160px;
@@ -589,12 +612,12 @@ footer {
   .button + .button {
     margin-left: 8px; }
   .button.fab {
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42.6 65' x='0px' y='0px'><title>down-5</title><path d='M355,452h-6V408a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v44Z' transform='translate(-330.7 -406)' fill='%23fff' /><path d='M352.1,458a2.5,2.5,0,0,1-1.9-.8l-18.9-21.1a2.5,2.5,0,0,1,3.7-3.3l17,19,16.9-19a2.5,2.5,0,0,1,3.7,3.3l-18.7,21.1a2.5,2.5,0,0,1-1.9.8h0Z' fill='%23fff' transform='translate(-330.7 -406)'/></svg>"), linear-gradient(to right, #8f64f3 0%, #39b1de 90%) #3a6ec1;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42.6 65' x='0px' y='0px'><title>down-5</title><path d='M355,452h-6V408a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v44Z' transform='translate(-330.7 -406)' fill='%23fff' /><path d='M352.1,458a2.5,2.5,0,0,1-1.9-.8l-18.9-21.1a2.5,2.5,0,0,1,3.7-3.3l17,19,16.9-19a2.5,2.5,0,0,1,3.7,3.3l-18.7,21.1a2.5,2.5,0,0,1-1.9.8h0Z' fill='%23fff' transform='translate(-330.7 -406)'/></svg>"), linear-gradient(to top right, #8f64f3 0%, #39b1de 90%) #3a6ec1;
     width: 80px;
     height: 80px;
     background-size: 30px, cover;
     background-repeat: no-repeat;
-    background-position: center center, center center;
+    background-position: center 22px, center center;
     border-radius: 100%;
     position: absolute;
     bottom: -40px !important;
@@ -602,7 +625,11 @@ footer {
     right: 20px !important;
     top: inherit !important;
     transition: transform 0.3s ease 0.2s;
-    transform: scale(0); }
+    transform: scale(0);
+    box-shadow: 0 10px 1 0px rgba(0, 0, 0, 0.08); }
+  .button.active {
+    box-shadow: none;
+    transform: scale(0.9); }
 
 @media (max-width: 640px) {
   header {
