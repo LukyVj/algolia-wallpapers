@@ -1,6 +1,12 @@
 [
 
 	{
+		"name":"wp-dark-night-rocket",
+		"url":"images/wp-dark-night-rocket.jpg",
+		"type": "mobile"
+	},
+
+	{
 		"name":"wp-millisecondsMatter_blue",
 		"url":"images/wp-millisecondsMatter_blue.jpg",
 		"type": "desktop"
