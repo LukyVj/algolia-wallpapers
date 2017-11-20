@@ -35,5 +35,35 @@
 		"name":"wp-iphoneplus-hello",
 		"url":"images/wp-iphoneplus-hello.png",
 		"type": "mobile"
+	},
+	{
+		"name":"offices-iphone",
+		"url":"images/offices-iphone.png",
+		"type": "mobile"
+	},
+	{
+		"name":"offices-iphone-dark",
+		"url":"images/offices-iphone-dark.png",
+		"type": "mobile"
+	},
+	{
+		"name":"offices-regular",
+		"url":"images/offices-regular.png",
+		"type": "mobile"
+	},
+	{
+		"name":"offices-regular-dark",
+		"url":"images/offices-regular-dark.png",
+		"type": "mobile"
+	},
+	{
+		"name":"offices-retina",
+		"url":"images/offices-retina.png",
+		"type": "mobile"
+	},
+	{
+		"name":"offices-retina-dark",
+		"url":"images/offices-retina-dark.png",
+		"type": "mobile"
 	}
 ]
