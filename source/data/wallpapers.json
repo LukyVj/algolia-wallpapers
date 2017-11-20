@@ -49,22 +49,22 @@
 	{
 		"name":"offices-regular",
 		"url":"images/offices-regular.png",
-		"type": "mobile"
+		"type": "desktop"
 	},
 	{
 		"name":"offices-regular-dark",
 		"url":"images/offices-regular-dark.png",
-		"type": "mobile"
+		"type": "desktop"
 	},
 	{
 		"name":"offices-retina",
 		"url":"images/offices-retina.png",
-		"type": "mobile"
+		"type": "desktop"
 	},
 	{
 		"name":"offices-retina-dark",
 		"url":"images/offices-retina-dark.png",
-		"type": "mobile"
+		"type": "desktop"
 	}
 ]
 
